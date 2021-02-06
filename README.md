@@ -80,14 +80,25 @@ Important late dawn development: **rule-based expert systems**
 
 For example, the Atlanta airport, your airplane is parked by a rule-based expert system that knows how to park air-crafts effectively.
 
+Bulldozer age: Deep Blue. Bulldozer = we have at our disposal unlimited amounts of computing, and frequently you can substitute computing for intelligence. So no one would say that Deep Blue does anything like what a human chess master does, Deep Blue processes data like a bulldozer processing gravel
 
+Current age? Imagination age?
 
+200,000 years we have been in the current anatomical form. Then the ensuing 150,000 years not much evolution. Then 50,000 years ago, some group of human developed a capability that separated human from all other species
 
+Quoting Noam Chomsky:
+> It seems that shortly before 50,000 years ago, some small group of us acqured the ability to take two concepts, and combine them to make a third concept, without disturbing the original two concepts, without limit.
 
+We learned how to begin to describe things, in a way that was intimately connected with language. (But we also think with our eyes)
 
+### Language and 
 
+Language does two things:
+- it enables us to make descriptions. Descriptions enable us to tell stories. Storytelling and story understanding is what all of education is about
+- it enables us to marshal the resources of our perceptual systems, and even command our perceptual systems to imagine things we have never seen
 
+"Imagine running down the street with a full bucket of water"
 
-
+**language is at the center of things**
 
 ---
