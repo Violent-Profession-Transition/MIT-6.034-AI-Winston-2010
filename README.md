@@ -135,9 +135,24 @@ When you see an integration problem, you always try to apply a **transform**, an
 First, apply safe all transforms; Then look into the table of simple integrals; Then do a test to see if we are done.
 
 The program to do integration is a dawn-age program, written by a nearly blind, and subsequently completely blind graduate student James Slagle in 1960.
+[Link to James Slagle's PhD thesis on the Symbolic Automatic INTegrator (SAINT)](https://dspace.mit.edu/bitstream/handle/1721.1/11997/31225400-MIT.pdf)
 
+SAINT (acronym for "Symbolic Automatic INTegrator") program was written for IBM 7090 machine using punch cards (and only 32k of memory)!
 
+SAINT took 1.5 minutes to integrate `x*exp(x^2)` and 11 minuets to integrate the MIT first year calculus final exam question (the example discussed in Lecture 2).
 
+SAINT is written in LISP (list processing language by McCarthy).
 
+### Goal Tree
 
+`AND` node and `OR` node: the convention is to draw an arc over the `AND` nodes, so it looks like an `A`
+
+Problem reduction tree, also called `AND/OR` tree, also called the **goal tree** (because this tree of problems is a tree that shows how our goals are related to each other)
+
+James Slagle measured the depth of functional composition, to avoid something that is deeply nested and with a lot of functional compositions.
+
+> **When a heuristic transformation or an algorithm-like transformation is applied to a goal, new goals are generated. These goals, in turn, may generate more goals, and a certain hierarchy is created. Such a hierarchy is conveniently represented by a graph or tree growing downwards.**
+> -- from James Slagle thesis
+
+SAINT is always looking across the whole tree, the leaves of the tree. Whenever it has to find a place to work on with the heuristic transformation, it happened to look at all the leaves of the tree that had not yet been dealt with, tried to find the easiest one. This involves a lot of backing up and starting over on a branch of the tree that it has previously ignored. 
 
