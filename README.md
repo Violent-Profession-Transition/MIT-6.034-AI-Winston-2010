@@ -102,3 +102,42 @@ Language does two things:
 **language is at the center of things**
 
 ---
+
+## Lecture 2 Goal Trees and Problem Solving (Week 2 Feb132021)
+
+Outline for Lec2:
+- Modeling Human's Problem Solving
+  - Generate & Test
+  - Problem Reduction
+- Problem Reduction Tree
+- Transforms + Example
+- Reflections
+
+### Symbolic Integration Calculus
+
+If a problem can integrate, is that program, in any sense of the word, intelligent?
+
+You all learned how to integrate in high school, the question is, how did you do it? **Is the problem solving technique that we are trying to model by building a program that does symbolic integration, is that a common description of what people do when they solve problems?**
+
+The kind of problem solving in Lecture 2 is like generating tests from Lecture 1, and we we engage in it without thinking too much about it. **BUT ONCE WE GET A NAME FOR IT, WE'LL GET POWER OVER IT.**
+
+When you see an integration problem, you always try to apply a **transform**, and **make it into a different problem that is easier to solve**. You hope if you simplify it sufficiently, the pieces you have simplifed to will be found in some small table of integrals. **How many of such simplied pieces/elements have to be there ==> How much knowledge is involved**
+
+**Catechism to find out how much knowledge is involved:**
+- what kind
+- how represented
+- how used
+- how much
+- what exactly
+
+**Problem Reduction = Take the problem we're given, and convert it into another problem that is simpler.**
+
+First, apply safe all transforms; Then look into the table of simple integrals; Then do a test to see if we are done.
+
+The program to do integration is a dawn-age program, written by a nearly blind, and subsequently completely blind graduate student James Slagle in 1960.
+
+
+
+
+
+
