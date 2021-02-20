@@ -199,7 +199,7 @@ Whether a program that could do symbolic integration would/should be considered 
 
 ---
 
-## Lecture 3 (Week 3 Feb202021)
+## Lecture 3 Rule-based Expert System (Week 3 Feb202021)
 
 ### Block Program PUT-ON/CLEAR-TOP/GET-RID-OF
 
@@ -240,7 +240,7 @@ Doctors asking you a lot of questions about your disease.
 Use identifying animal as an example of MYCIN: write down all the things we can observe about an animal and try to figure out what that animal is.
 
 **Forward-chaining Rule-based "Expert" System** (expert is for marketing reasons)
-- not equipped with common sense
+- not equipped with **common sense**
 - do not have ability to deal with previous cases (unlike in medical school training)
 - really novice systems that reason on bases of rules
 - can also answer questions about its own behavior --> has goal-tree
@@ -249,6 +249,18 @@ Use identifying animal as an example of MYCIN: write down all the things we can 
 
 These rule-based system is sufficient to confuse even the expert that they were patterned after.
 
+### Knowledge Engineering
 
+Heuristics:
+- look at specific cases, elicit from people knowledge they otherwise would not have thought to give you
+- ask questions about things that appear to be the same but are handled differently
+- build a system and see when it cracks --> to discover missing rules
+- **knowledge engineer yourself! mechanisms for making yourself smarter and learn new subjects**
+- the experts won't think what to tell you unless you:
+  - elicit that information by specific cases
+  - ask quetsions about differences
+  - ultimately do some experiments to see where your program is correct
 
+Are these systems really smart? Do rules have anything to do with common sense?
 
+**When we tell a story, it is mostly a matter of controlled hallucination**: I know what rules are in your head, so I could take advantage of that in telling the story and not have to tell you anything that I'm sure you are going to know.
