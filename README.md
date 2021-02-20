@@ -197,4 +197,15 @@ Whether a program that could do symbolic integration would/should be considered 
 
 **Once we understand how something works, its intelligence seems to vanish**
 
+---
+
+## Lecture 3 (Week 3 Feb202021)
+
+### Block Program PUT-ON/CLEAR-TOP/GET-RID-OF
+
+Demo of a program written by Terry Winograd (MIT/Stanford) using natural language processing, and **it is a program that looks like it is kind of smart and it somehow can answer questions about its own behavior**
+
+The structure of the program is extrememly simple: how can you get such apparently complex-looking behavior out of such a simple program?
+
+**Why it does something vs How it does something**: Why goes one level up for answer, How goes one level down for answer
 
