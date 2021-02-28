@@ -271,6 +271,8 @@ Are these systems really smart? Do rules have anything to do with common sense?
 
 Search path of a thief vs honest beginner vs expert.
 
+Not talking about optimal path today. Just pretty good paths and heuristic paths.
+
 ### Problem solving with the eyes
 
 **We can visually using our eyes within seconds find a pretty good path, not the optimal one, but a pretty good one. And we do not know how using our eyes AI works.**
@@ -287,15 +289,25 @@ But for this course, **our programs do not have eyes, and they don't have visual
 
 1. British Museum approach = You find every possible path
 2. Depth First Search = barrel ahead in a single-minded way
+3. Breadth First Search = build up the tree level by level and SCAN ACROSS a level
+4. Hill Climbing = DFS but not using simple lexical order to break ties, instead use which node is closer to the goal
 
 **Search not = Maps! Search is about choice. Search is not about maps. It is about the choices you make when you are trying to make decisions.** For example, the **choices you make** when you explore the map.
 
 **Backing up to the place where we last made a decision == backup or backtracking**
 
-| Search Method  | Backtracking |
-| ------------- | ------------- |
-| British Museum | N.A. (backtracking is not relevant because **British Museum has to find everything**, cannot quit if you found one.  |
-| Depth First | Yes |
+BFS is duplicating paths it has already searched ==> silly thing of going back through the final node that's already been gone through.
+
+More clever searches = more informed search by taking into consideration whether we seem to be getting anywhere. In general, it is a good thing to get closer to where we want to go. **if you have some heuristic that tells you if you are getting closer to the goal, you should use it ==> hill climbing + DFS**
+
+_It is not often the case you have extra information in decision making about heuristic measurement of distance to the goal, in which case you cannot use informed search. But if you have such heuristic measurement, you should use it in your search._
+
+| Search Method  | Backtracking | Use Enqueued List | Informed Search |
+| ------------- | ------------- | --- | --- |
+| British Museum | N.A. (backtracking is not relevant because **British Museum has to find everything**, cannot quit if you found one.  | N.A. | N.A. |
+| Depth First | Yes (optional add-on) | Helpful | No |
+| Breadth First | No backtracking | Helpful | No |
+| Hill Climbing | Yes, backtracking like DFS | Helpful | Yes, making use of heuristic information |
 
 ### Search as a model of what goes on in our head
 
