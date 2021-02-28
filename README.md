@@ -264,3 +264,39 @@ Heuristics:
 Are these systems really smart? Do rules have anything to do with common sense?
 
 **When we tell a story, it is mostly a matter of controlled hallucination**: I know what rules are in your head, so I could take advantage of that in telling the story and not have to tell you anything that I'm sure you are going to know.
+
+---
+
+## Lecture 4 Search 1 (Week 4 Feb282021)
+
+Search path of a thief vs honest beginner vs expert.
+
+### Problem solving with the eyes
+
+**We can visually using our eyes within seconds find a pretty good path, not the optimal one, but a pretty good one. And we do not know how using our eyes AI works.**
+
+Important part of our total intelligence. We will never have a complete theory of human intelligence until we can understand the contributions of the human visual systems to solve everyday problems.
+
+But for this course, **our programs do not have eyes, and they don't have visually grounded algorithms**.
+
+### Intuition on how various search works
+
+**IMPT: develop search tree in lexical order (the nodes are listed alphabetically)**
+
+**IMPT: we don't have searches bite their own tail. No path is ever allowed to bite itself, to go around and enter and get back to a place that is already on the path**
+
+1. British Museum approach = You find every possible path
+2. Depth First Search = barrel ahead in a single-minded way
+
+**Search not = Maps! Search is about choice. Search is not about maps. It is about the choices you make when you are trying to make decisions.** For example, the **choices you make** when you explore the map.
+
+**Backing up to the place where we last made a decision == backup or backtracking**
+
+| Search Method  | Backtracking |
+| ------------- | ------------- |
+| British Museum | N.A. (backtracking is not relevant because **British Museum has to find everything**, cannot quit if you found one.  |
+| Depth First | Yes |
+
+### Search as a model of what goes on in our head
+
+
