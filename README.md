@@ -60,3 +60,14 @@ Please answer the following quiz questions when you finish lecture 4:
 
 ---
 
+## Lecture 5 Search Optimal with Branch & Bound (Week 5 Mar062021)
+
+Lecture 5 [class notes](lec5-search-optimal-bb-astar/README.md)
+
+### Quiz for Lecture 5:
+
+* What is the name of the highway that is very popular among people who want to drive across USA because it is a short path?
+* When we have an oracle giving us the answer, do we check if the oracle is trying to delude us?
+* When is a heuristic admissble?
+* Is A-star search always the best way to find the shortest (optimal) path?
+
