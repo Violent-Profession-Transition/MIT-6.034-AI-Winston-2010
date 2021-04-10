@@ -5,11 +5,11 @@
 Hubert Dreyfus, a MIT philosopher, in 1963 wrote a paper called:
 > Computers can't play chess
 
-Hubert Dreyfus is a major critic of AI [wiki](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence)
+Hubert Dreyfus is a major critic of AI ([wiki](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence))
 
 He then played against the Greenblatt Chess machine, and lost to the computer
 
-Greenblatt chess machine is written by MIT AI lab research Richard Greenblatt [wiki](https://en.wikipedia.org/wiki/Richard_Greenblatt_(programmer))
+Greenblatt chess machine is written by MIT AI lab research Richard Greenblatt ([wiki](https://en.wikipedia.org/wiki/Richard_Greenblatt_(programmer)))
 
 Seymour Pavitt rebuttal:
 > Dreyfus can't play chess either
@@ -96,29 +96,48 @@ Let's say the player at the top would like to drive the play as much as possible
 
 There is another player, his opponent, which we will call the **minimixing player**, and he is hoping that the play will go down to the board situation that is as small as possible
 
-**Perceived value of that board situation at the top**
+Player Max (eg white side) vs player Min (eg black side) are trying to maximuze or minimize the reward, and they take turns to play.
+
+**Perceived value of that board situation at the top, from the perspective of player (min or max)**
 
 Minimax algorithm = **You go down to the bottom of the tree, you compute static values, you back them up level by level, and then you decide where to go**
 
-**Pull out every trick we can find to go as far as possible**
+If you get down around 10 levels deep, and your branching factor is 14, it is not praticable to do all the static evaluations down there. But if you get down atbout 15 or 16 levels, you beat the world champion. So you want to get as far down in the tree as possible.
+
+**When you get as far down into the tree as possible, what happens is the linear scoring polynomial with features that measure the board quality begins to clarify**.
+
+In fact, when you get far, enough, the only thing that really counts is piece count, one of those features. So if you get far enough, piece count and a few other features will give you a good idea of what to do (action to take).
+
+**Pull out every trick we can find to go as far down the tree as possible**
 
 ### alpha-beta
 
-Layering on top of minimax that cuts off large sections of the search tree.
+Layering on top of minimax that **cuts off large sections of the search tree**.
 
 It is called alpha-beta because there are two parameters.
 
 NOTE: alpha-beta is NOT an alternative to minimax, it is a layer on top of minimax to make it more efficient.
+**Alpha-beta does not give you an answer different from minimax, it gives you exactly the same answer, NOT a different answer. It is a SPEED-UP, not an approximation**, it cuts off lots of the tree --> dead horse principle at work.
 
-**Minmax and alpha-beta arrive at a comprised number virtue of the fact that this is an _adversarial situation_**
+Not only do we not have to make these static evaluations, we do not even have to generate these moves.
+
+**Minmax and alpha-beta arrive at, not the biggest number, not the smallest number, but a compromised number that is arrived at virtue of the fact that this is an _adversarial situation_**
 
 ### Progressive Deepening
 
-Insurance or "anytime" algorithm.
+Insurance or "anytime" algorithm (always have an answer ready to go as soon as an answer is demanded).
+
+**Let's say the branching factor is 10, the number of static evaluations at level d is 10 times more than that at level (d-1) --> we can compute the static values and have a move in hand at level (d-1) for only 10% of the amount of the computation that is required for level d**
+
+The amount of computation needed to do insurance policies at every level is not much different from the amount of computation needed to get an insurance policy at just one level, the penultimate level.
+
+**Anytime algorithm: as soon as that clock runs out at two minutes, some answer is available. It will be the best one that the system can compute in the time available given the characteristics of the game tree as it has developed so far**.
 
 DeepBlue in 1997 did 200 million static evaluation per second, went down using alpha-beta about 15 levels.
 
 DeepBlue = minimax + alpha-beta + progressive deepening + a lot of parallel computing + dynamic/uneven tree development
+
+DeepBlue beat Kasparov
 
 ### Closing Remarks
 
@@ -126,3 +145,12 @@ But is this a model of human intelligence? Or different kind of intelligence?
 
 Is this a model of anything that goes on in our own heads?
 
+Mixed.
+
+Yes, we are often in situations where we are playing a game, and we are competeing with another player (adversatial), and we have to think about what the adversarial will do in response to what we do, down several levels.
+
+But going down 14 levels is too much computational horsepower for human --> bulldozer processing gravel --> **substituting raw power for sophistication**
+
+Chess players are good at memorizing chess boards as long as it is a legitimate chessboard, if the pieces are placed randomly, chess masters are no good at it at all. (a lot like Approach No.1)
+
+DeepBlue is not our intelligence, it is bulldozer intelligence. (it is important to understand that kind of intelligence too)
