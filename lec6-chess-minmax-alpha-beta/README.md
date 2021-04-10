@@ -2,41 +2,55 @@
 
 ### Chess and AI
 
-Hubert Dreyfus in 1963 said:
+Hubert Dreyfus, a MIT philosopher, in 1963 wrote a paper called:
 > Computers can't play chess
 
+Hubert Dreyfus is a major critic of AI [wiki](https://en.wikipedia.org/wiki/Hubert_Dreyfus%27s_views_on_artificial_intelligence)
+
 He then played against the Greenblatt Chess machine, and lost to the computer
+
+Greenblatt chess machine is written by MIT AI lab research Richard Greenblatt [wiki](https://en.wikipedia.org/wiki/Richard_Greenblatt_(programmer))
 
 Seymour Pavitt rebuttal:
 > Dreyfus can't play chess either
 
-1968 chess master David Levy bet John McCarthy that no computer would beat the world champion.
+1968 chess master David Levy bet John McCarthy that no computer would beat the world champion within 10 years.
 
-1977 DeepBlue -> chess becomes unteresting
+5 years later John MrCarthy gave up, because no comptuer would in in a way that McCarthy wanted it to win, that is to say by **playing chess the way humans play chess**
+
+1997 DeepBlue beat the world champion -> chess suddenly becomes unteresting
 
 ### Game and AI
 
-There are elements of game-play that do model some of the things that go on in our head, or model some kind of intelligence
+There are elements of game-play that do model some of the things that go on in our head. And if they don't model things that go on in our head, they do model some kind of intelligence. (We need to understand _that_ intelligence too)
 
-DeepBlue adds tremendous speed.
+DeepBlue adds more than just tremendous speed
 
 ### How to Model Chess Intelligence
 
-There are several proposed ideas:
+Various ways that we might design a computer program to play a game like chess.
+
+How it might be possible for a computer to play chess. There are several proposed ideas:
 
 1. Make description of the board the same way a human would. Analysis, strategy, and tactic, to generate moves.
 
-No one knows how to do it, until now, no game program incorporate this idea.
+No one knows how to do it, until now, no game playing program incorporate this idea (Dreyfus was right).
 
 2. if-then rules, no evaluation of the board, does not try angthing. Look at board and select move. _Not a good approach_
 
+Situations + possible moves = one possibile move selected based on if-then rules.
+
 3. look ahead and evaluate
 
-Many features of the chessboard
+Look ahead from current situation and see all the possible consequences of moves and evaluate which of these board situations is best for me?
 
-Function of the features.
+**Mechanisms of evaluating the siatuaion deciding which of those is best**
 
-Linear scoring polynomial (more than what we need, we just need argmax)
+A popular mechanism to evaluate move/board: Many features of the chessboard --> Function of the features --> Static value of the board seen from your perspective.
+
+It is **static** because you are not exploring any consequences of what **might happen**, instead, **you are just looking at the board as it is**, checking the King's safety, checking the pawn structure... each of those produces a number fed into the function and out comes a value.
+
+Linear scoring polynomial (more than what we need, we just need argmax of possible boards)
 
 Linear scoring polynomial not the only way to evaluate a move
 
