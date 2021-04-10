@@ -112,4 +112,17 @@ NOTE: alpha-beta is NOT an alternative to minimax, it is a layer on top of minim
 
 **Minmax and alpha-beta arrive at a comprised number virtue of the fact that this is an _adversarial situation_**
 
+### Progressive Deepening
+
+Insurance or "anytime" algorithm.
+
+DeepBlue in 1997 did 200 million static evaluation per second, went down using alpha-beta about 15 levels.
+
+DeepBlue = minimax + alpha-beta + progressive deepening + a lot of parallel computing + dynamic/uneven tree development
+
+### Closing Remarks
+
+But is this a model of human intelligence? Or different kind of intelligence?
+
+Is this a model of anything that goes on in our own heads?
 
