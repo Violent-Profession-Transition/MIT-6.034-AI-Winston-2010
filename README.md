@@ -72,3 +72,13 @@ Lecture 5 [class notes](lec5-search-optimal-bb-astar/README.md)
 * Q4: When is a heuristic admissble?
 * Q5: Is A-star search always the best way to find the shortest (optimal) path?
 
+---
+
+## Lecture 6 Chess, Game and AI: Look ahead and Evalute with minmax and alpha-beta (Week 6 Mar132021)
+
+Lecture 6 [class notes](lec6-chess-minmax-alpha-beta/README.md)
+
+### Quiz for Lecture 6:
+
+* Q1:
+

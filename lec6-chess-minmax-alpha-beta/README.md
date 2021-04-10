@@ -1,4 +1,4 @@
-## Lecture 6 Search min-max and alpha-beta (Week 6 Mar132021)
+## Lecture 6 Chess, Game and AI: Search min-max and alpha-beta (Week 6 Mar132021)
 
 ### Chess and AI
 
