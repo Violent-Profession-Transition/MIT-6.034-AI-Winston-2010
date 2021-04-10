@@ -80,5 +80,8 @@ Lecture 6 [class notes](lec6-chess-minmax-alpha-beta/README.md)
 
 ### Quiz for Lecture 6:
 
-* Q1:
-
+* Q1: Hubert Dreyfus, a MIT philosopher, said "computers cannot play chess" in 1963. When he sat down and play aginst Greenblatt chess machine from MIT AI lab, what was the game result?
+* Q2: In 1968, chess master David Levy bet on founding figures of AI, John McCarthy that no computers would beat chess world champion in 10 years. John McCarthy admit defeat in 5 years. Why did McCarthy give up?
+* Q3: How would you construct a linear scoring polynomial function to evaluate the chess board situations? What features of the chess board would you consider, other than piece count for example?
+* Q4: How many possible chess states are there as estimated by Claude Shannon? Explain why the entire universe since Big Bang would not be able to evaluate all the possible chess states.
+* Q5: Will alpha-beta algorithm give different or approximate answers than that by min-max algorithm?
