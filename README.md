@@ -90,7 +90,7 @@ Lecture 6 [class notes](lec6-chess-minmax-alpha-beta/README.md)
 
 ## Lecture 7 Constraint and Computer Vision in Line Drawing Analysis (Week 13 May012021)
 
-Lecture 7 [class notes](./lec7-constraint-trihedral-vertex-vision/README.md/README.md)
+Lecture 7 [class notes](./lec7-constraint-trihedral-vertex-vision/README.md)
 
 ### Quiz for Lecture 7:
 
