@@ -13,7 +13,7 @@ This lecture will talk about the struggle for coming up with the ideas that led 
 
 It all has to do, originally with an attempt to make a computer capable of seeing. So people start with seeing simple things like children's blocks.
 
-Adolfo Guzman is a graduate student of Marvin Minsky and was doing a summer project to look at a line drawing and determine how many objects are there in a line drawing.
+Adolfo Guzman (https://es.wikipedia.org/wiki/Adolfo_Guzm%C3%A1n_Arenas) is a graduate student of Marvin Minsky and was doing a summer project to look at a line drawing and determine how many objects are there in a line drawing.
 
 Adolfo Guzman went to Boston Baby, the precursor to Toys R Us to take a lot of pictures to get a feel for the domain.
 
@@ -21,13 +21,17 @@ Adolfo Guzman went to Boston Baby, the precursor to Toys R Us to take a lot of p
 
 When Guzman presented this work in his PhD thesis defense, Marvin Minsky thought it was great work and MIT should make Guzman a professor.
 
-Dave Huffman was also on the committee and said that it was ad hoc and the thesis should be rejected.
+Dave Huffman (https://en.wikipedia.org/wiki/David_A._Huffman) was also on the committee and said that it was ad hoc and the thesis should be rejected.
 
 Dave Huffman is the guy who invented Huffman coding as a term paper in an information theory course taught by Bob Fano (an Italian-American computer scientist at MIT).
 
 Huffman thought it was too ad hoc, too heuristic, it did not take advantage of anything we might know about physics.
 
 ### Trihedral + 3 faces
+
+[!egPic1](./plaintower.jpg)
+[!egPic2](./afttower.jpg)
+[!egPic3](./towerlabel.jpg)
 
 The world is in fact full of three face vertexes or three face junctions.
 
@@ -74,3 +78,8 @@ So it is very likely that we in our heads **do have some constraint propagation 
 Solve problems that involve a lot of constraint in finding a solution.
 
 Here we saw the constraint propagation activity at work on line drawing analysis, but next time we are going to see it at work in map coloring.
+
+
+### References
+https://cs.stanford.edu/people/eroberts/courses/soco/projects/1997-98/computer-vision/linelabeling.html
+>In the 1970's, David Huffman and Maxwell Clowes (among others) began to teach a computer to recognize polyhedral images as 3-d scenes. As A. Dewdney explains in his book The New Turing Omnibus, a polyhedral scene is "an assembly of solids each of which is bounded by plane faces. The faces of these solids meet along straight-line segments having a characteristic geometry and showing only a finite number of relationships where two or more of them meet." The work of Huffman and Clowes to make a computer understand such a scene and determine what individual shapes it is composed of was later expanded on by David Waltz

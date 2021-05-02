@@ -85,3 +85,16 @@ Lecture 6 [class notes](lec6-chess-minmax-alpha-beta/README.md)
 * Q3: How would you construct a linear scoring polynomial function to evaluate the chess board situations? What features of the chess board would you consider, other than piece count for example?
 * Q4: How many possible chess states are there as estimated by Claude Shannon? Explain why the entire universe since Big Bang would not be able to evaluate all the possible chess states.
 * Q5: Will alpha-beta algorithm give different or approximate answers than that by min-max algorithm?
+
+---
+
+## Lecture 7 Constraint and Computer Vision in Line Drawing Analysis (Week 13 May012021)
+
+Lecture 7 [class notes](./lec7-constraint-trihedral-vertex-vision/README.md/README.md)
+
+### Quiz for Lecture 7:
+
+* Q1: Adolfo Guzman went to purchase a lot of children's blocks to study the computer vision of detecting objects from lines, what is the name of the store he went to? (Hint: it is a precursor to Toys R Us)
+* Q2: David Huffman is a mathematician, and explain why that might make him wanting to reject Guzman's PhD thesis?
+* Q3: Give one example of a vertex formed by more than three planes/faces.
+* Q4: Do you think we have similar constraint propagation apparatus that we use in our vision system?
