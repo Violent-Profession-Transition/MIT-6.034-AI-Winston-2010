@@ -29,9 +29,9 @@ Huffman thought it was too ad hoc, too heuristic, it did not take advantage of a
 
 ### Trihedral + 3 faces
 
-[!egPic1](./plaintower.jpg)
-[!egPic2](./afttower.jpg)
-[!egPic3](./towerlabel.jpg)
+![egPic1](./plaintower.jpg)
+![egPic2](./afttower.jpg)
+![egPic3](./towerlabel.jpg)
 
 The world is in fact full of three face vertexes or three face junctions.
 
