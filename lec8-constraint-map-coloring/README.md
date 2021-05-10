@@ -92,7 +92,7 @@ What to consider?
   - and the unfortunate coloring of the four surrounding states
   - and our unfortunate decision to rotate the color so as to avoid overdoing any one color
 - Check Neighbors with Reduced Domains: check the neighbors of the assignments
-  - Just like we did for Texas: _we checked Texas each time we made one of those four choices, because Texas is a neighbor of all of the choices of the states that we made
+  - Just like we did for Texas: _we checked Texas each time we made one of those four choices, because Texas is a neighbor of all of the choices of the states that we made_
   - will go through a lot of effort: 9k dead ends and 54k constraints checked
   - but it did some good, it did not take a length of time longer than the remaining part of the universe to complete
 - Propagate checking through variables with reduced domains: if we make a change to a neighbor, then we check its neighbors, too
