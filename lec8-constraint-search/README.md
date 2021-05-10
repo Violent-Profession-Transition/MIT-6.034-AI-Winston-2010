@@ -81,3 +81,31 @@ Constraint = Map coloring constraint that no states that share a boundary can ha
 
 ![DomRed1](./DomainReductionAlg_Patrick.png)
 ![DomRed2](./DomainReductionAlg.jpg)
+
+### Consider
+
+What to consider?
+- Nothing: no checks at all
+- Everything: _as soon as we color our first state, we check to make sure that all 47 other states can be colored_
+- Assignment: at least check the assignment --> takes 17 billion years
+  - because of the unfortunate choice of Texas as the last state to be considered
+  - and the unfortunate coloring of the four surrounding states
+  - and our unfortunate decision to rotate the color so as to avoid overdoing any one color
+- Check Neighbors with Reduced Domains: check the neighbors of the assignments
+  - Just like we did for Texas: _we checked Texas each time we made one of those four choices, because Texas is a neighbor of all of the choices of the states that we made
+  - will go through a lot of effort: 9k dead ends and 54k constraints checked
+  - but it did some good, it did not take a length of time longer than the remaining part of the universe to complete
+- Propagate checking through variables with reduced domains: if we make a change to a neighbor, then we check its neighbors, too
+  - zero dead ends, only 2k constraints checked
+- Propagate checking through V with domain reduced to one value (**propagate through domains shrinking to one value**): we are not going to propagate through all of the variables which have their domains shrunk a little bit. We are only going to propgate through those that have greater shrinkage, all the way down to a single values
+  - 2 dead ends, but only 980 constraints checked!
+  - **winner!**
+
+**Consider summary**:
+1. you don't want to consider nothing, because then you are not honoring your constraints, at least check the assignments because otherwise you will construct a solution that violates a constraint.
+2. don't consider everything, because that is excessive work
+3. Checking the neighbors is a good idea
+4. In practice, it is **better to do some propagation through the things that you have changed**
+5. **How much propagation?** It does not seem to do much good to propagate through things that are just changed, **it seems to do good to propgate through the things that have changed AND BEEN REDUCED TO A SINAGLE VALUE**
+6. **SO, as soon as you get a neighbor of some assignment you just made that has its domain reduced to a single value, then you check its neighbors, too!**
+7. So you check the neighbors of the neighbors of the neighbors... **as long as you have found a domain being reduced, and not only being reduced but reduced to a single value**
