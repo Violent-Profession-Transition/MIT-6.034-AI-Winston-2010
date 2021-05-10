@@ -6,20 +6,20 @@
 - propagation options
 - deering effects
 - resource ???
-- ovle emtex
+- Over/Under
 
 **Gold star ideas**
 - marshal arts principle
 - anytime algorithm
 
 
-### Simplistic Map Coloring
+### Simplicia Map Coloring
 
 There are 26 states, one for each letter in the alphabet
 
 First do a depth-first-search for a suitable coloring of this map (going down the order a-b-c-d-e...)
 
-At each level, we are going to rotate the color choices so we don't over-use any one color
+**At each level, we are going to rotate the color choices so we don't over-use any one color**
 
 The program demoed in lecture is roughly 30 frames a second, and it will take 5000 years to iterate through.
 
@@ -37,8 +37,30 @@ If you do a depth-first-search and you have a problem like Texas and Arizona, Ok
 
 Just like in the case of trihedral line-drawings, we will pile up all the possible things that the value can be -- Red, Green, Blue, Yellow, and we start up constraint propagation
 
-So we say for the upper left hand corner state, is there any reason to believe that Red is impossible? We look at the neighbors and see what kind of constraint flows in from the neighbors. They do not have to be Red, so there is nothing that rules out Red in the upper left hand corner state (and nothing that rules out green, blue, yellow)
+So we say for the upper left hand corner state, is there any reason to believe that Red is impossible? We look at the neighbors and see **what kind of constraint flows in from the neighbors**. They do not have to be Red, so there is nothing that rules out Red in the upper left hand corner state (and nothing that rules out green, blue, yellow)
 
 When we run out of choices to color Texas, we **back up**, so that means that Yellow is ruled out for Louisiana, and Texas is assigne Yellow. **Then we select the next color in line for Louisiana, which happens to be red**. And now this is consistent with Yellow in Texas and Blue in Arkansas.
 
 **We are using the martial arts principle again, because the whole problem is that local constraints, undiscovered local constraints are causing downstream problems** --> we are going to use the enemies' power against them
+
+We will look at the local constraints as we go and make sure they are not going to get us downstream
+
+### Language to Describe What is Going On
+
+So it is clear what the choices are.
+
+**Vocabulary**
+- Variable `v`: something that can have an assignment
+- Value `x`: something that can BE an assignment
+- Domain `d`: a bag of values
+- Constraint `c`: a limit on (pairs of variables, and pairs of variable values), but in general it can be limit on variable values `x`
+
+The states = variables `v`
+
+The colors = values `x`
+
+Domain = Bags of colors = Remaining color possibilities that we can still use on a particular state
+
+Constraint = Map coloring constraint that no states that share a boundary can have the same color (adjacent states cannot have same color)
+
+### Reduce Intuition to a Procedure
