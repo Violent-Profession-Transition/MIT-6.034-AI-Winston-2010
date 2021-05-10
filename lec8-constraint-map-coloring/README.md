@@ -1,11 +1,11 @@
-## Lecture 8 Constraint and Computer Vision in Line Drawing Analysis (Week 14 May092021)
+## Lecture 8 Constraint: Map Coloring and Flight Scheduling (Week 14 May092021)
 
 **Main Agenda**
 - the trouble with ??as
 - domain reduction algorithm
 - propagation options
 - deering effects
-- resource ???
+- resource planning
 - Over/Under
 
 **Gold star ideas**
@@ -87,7 +87,7 @@ Constraint = Map coloring constraint that no states that share a boundary can ha
 What to consider?
 - Nothing: no checks at all
 - Everything: _as soon as we color our first state, we check to make sure that all 47 other states can be colored_
-- Assignment: at least check the assignment --> takes 17 billion years
+- Assignment: at least check the _current_ assignment --> takes 17 billion years
   - because of the unfortunate choice of Texas as the last state to be considered
   - and the unfortunate coloring of the four surrounding states
   - and our unfortunate decision to rotate the color so as to avoid overdoing any one color
@@ -109,3 +109,42 @@ What to consider?
 5. **How much propagation?** It does not seem to do much good to propagate through things that are just changed, **it seems to do good to propgate through the things that have changed AND BEEN REDUCED TO A SINAGLE VALUE**
 6. **SO, as soon as you get a neighbor of some assignment you just made that has its domain reduced to a single value, then you check its neighbors, too!**
 7. So you check the neighbors of the neighbors of the neighbors... **as long as you have found a domain being reduced, and not only being reduced but reduced to a single value**
+
+### Discussion on Map constraints
+
+We have highly constrained states that have a lot of bordering states around them, but we also states like Maine that only borders on one other state.
+
+**dirty little secret: if we had arranged our states from most constrained to least constrained, ordinary depth-first search with NONE OF THE NEIGHBOR CHECKS will work JUST FINE!!** --> dead ends = 3, constraints checked = 0
+
+**It is a little bit like games, do you use progressive deepening, or do you use alpha beta? And the answer is both. _You use everything you have got to deal with the problems_**
+
+
+### Resource Planning Problems
+
+Get by with **smallest number of airplanes** --> resource allocation problem
+
+As you make your choices, you will rotate the aircraft
+
+**Constraint = no single physical aircraft can fly two flights at the same time** --> no same time constraint
+
+You can also have other constraints like "minimal ground time constraint"
+
+**Constraint checks: assignments only --> situation that is guaranteed to lose at the bottom because of the choices made at the top**
+
+**Constaint checks: neighbors only --> works**
+
+### Make Map Coloring and Resource Allocation Easier
+
+Use a whole lot of colors (it is the use of four colors that got us into trouble)
+
+What is the maximum number of airplanes we are going to need? == number of flights
+
+What is the minimum number of airplanes we need? == 1
+
+**anytime algorithm --> you are not sure, but you know it is going to be some answer ready**
+
+### Summary
+
+1. always want to use most constraint first
+2. you want to propgate through domains reduced to a single value
+3. if you need to figure out the minimum number of resources needed is, do under/over business and quickly converge on a narrow range (when you over resource, it is fast to complete, and when you under resource, it is fast to terminate)

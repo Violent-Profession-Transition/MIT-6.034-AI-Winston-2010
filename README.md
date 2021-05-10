@@ -98,3 +98,16 @@ Lecture 7 [class notes](./lec7-constraint-trihedral-vertex-vision/README.md)
 * Q2: David Huffman is a mathematician, and explain why that might make him wanting to reject Guzman's PhD thesis?
 * Q3: Give one example of a vertex formed by more than three planes/faces.
 * Q4: Do you think we have similar constraint propagation apparatus that we use in our vision system?
+
+---
+
+## Lecture 8 Constraint: Map Coloring and Resource Allocation (Week 14 May092021)
+
+Lecture 8 [class notes](./lec8-constraint-map-coloring/README.md)
+
+### Quiz for Lecture 8:
+
+* Q1: Give one example of a map coloring situation where the color choice on the 4th state will get yourself into a dead end in your 48th state?
+* Q2: When we run out of a suitable color choice for Texas, what should we do?
+* Q3: For a 48-state USA map, what is the maximum and minimum number of colors you need to color the map?
+* Q4: Besides the constraint of no single physical aircraft can fly two flights at the same time (no same time constraint), what other constraints can you think of for allocating resources to schedule airline flights?
