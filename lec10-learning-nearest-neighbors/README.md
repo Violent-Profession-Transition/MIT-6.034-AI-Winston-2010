@@ -28,5 +28,22 @@ There are **two kinds of learning:**
     - **learn something definite from each experience** --> one-shot learning
     - Explanation-based learning
 
+![regularity-learning](./bulldozer-learning.png)
+![humanlike-learning](./humanlike-learning.png)
 
 AI has borrowed, stolen, improved, invented some stuff, that is why our discussion of learning will reach around all of these topics
+
+## Pattern Recognition and Nearest Neighbors
+
+Feature detector and comparator, compare with library, and outputs recognition
+
+**Of course, there is noise, there is manufacturing variability, so the measured features won't be precisely categorized**
+
+We have to figure out what those newly viewed objects are closest to in order to do an identification
+
+We can just calculate the distance to those standard, platonic, ideal descriptions of things, and we find out which is nearest.
+
+**But in general, it is easier to think about producing some boundaries between these various idealized places to make decision**
+
+**Constructing perpendicular bisectors as boundaries**
+
