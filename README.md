@@ -111,3 +111,17 @@ Lecture 8 [class notes](./lec8-constraint-map-coloring/README.md)
 * Q2: When we run out of a suitable color choice for Texas, what should we do?
 * Q3: For a 48-state USA map, what is the maximum and minimum number of colors you need to color the map?
 * Q4: Besides the constraint of no single physical aircraft can fly two flights at the same time (no same time constraint), what other constraints can you think of for allocating resources to schedule airline flights?
+
+---
+
+## Lecture 9 Constraint: Visual Object Recognition (Week 15 May162021)
+
+Lecture 9 [class notes](./lec9-constraint-CV-obj-recognition/README.md)
+
+### Quiz for Lecture 9:
+
+* Q1: Why is David Marr's theories treated like Gospels in computer vision research?
+* Q2: Shimon Ullman, Marr's phd student, proposed to use alignment theory to recognize objects. What kind of projection does he use?
+* Q3: How does Ullman's correlation theory use Goldilock's principle?
+* Q4: Brothers Grimm collected fairy tales, and which fairy tale gives the Rumpelstiltskin principle?
+* Q5: Why do you think we can recognize faces even from the side-view?
