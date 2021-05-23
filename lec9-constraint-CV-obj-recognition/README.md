@@ -8,7 +8,9 @@
 - still not solved, the attempts at solution have evolved very very slowly over the past 30 years (1980-2010)
 
 **Gold star ideas**
-- 
+- Rumpelstiltskin principle
+- Goldilocks principle
+- Power of Correlation
 
 
 ### David Marr, Primal Sketch, 2.5D Sketch
@@ -71,3 +73,45 @@ For our faces, it is also difficult to find the exact corresponding points, and 
 
 This is still in the traidition of working from **local features in the objects towards recognition**, does not solve the whole recognition problem
 
+## Shimon Ullman and Correlation
+
+Shimon Ullman comes up with another theory that is **not based on edge fragments or the location of particular features, but rather on correlation**
+
+Use correlation mask and run it all over the picture of the class and seeing where it maximizes out
+
+No need to look for the whole face, but also cannot just look for eyes, because program can find eyeballs in very doorknob
+
+We look for intermediate features, like 2 eyes + 1 nose, or 1 mouth + 1 nose
+
+That is the **Goldilocks principle**, not too big, not too small
+
+## Goldilocks Principle
+
+> The Goldilocks principle is named by analogy to the children's story "The Three Bears", in which a young girl named Goldilocks tastes three different bowls of porridge and finds she prefers porridge that is neither too hot nor too cold, but has just the right temperature. The concept of "just the right amount" is easily understood and applied to a wide range of disciplines
+> -- from wiki (https://en.wikipedia.org/wiki/Goldilocks_principle)
+
+## Rumpelstiltskin Principle
+
+Marr was a genius at naming things, even though many of his theories have faded, he is still known for these names like primal sketch and 2.5D sketch, **he is such an artist at naming the concepts**
+
+## Face as Signal, Integral and Normalization
+
+We are good at picking faces out of images.
+
+Two eyes is an intermediate-size constraint, it is loose enough that it will match more than one person, but it is not so loose as bad as looking for only one eye
+
+**But this correlation matching is recognizing faces straight on, but not from the side ==> it is possible that we have an ability to make those transformations from looking at side, and alignment theory has a role to play**
+
+Another theory is that after I have seen you once I can watch you turn your head and keep recording what you look like at all possible angles (not is there enough capacity in our brain?)
+
+Turning the face upside down would make it hard to do both correlation and alignment.
+
+## Current Question in Computer Vision
+
+People have worked for a long time on computer vision and recognition stuff, and have neglected the more serious questions: **how do you visually determine what is happening?**
+
+If you could write a program that would reliably determine when these verbs (approach, dig, fall, give, hit, lift, fly, receive, bury, hand, kick, open, walk, bounce...) are happening in your field of view, Patrick will sign your PHD thesis right away.
+
+Hypothesis: we are telling a story with our visual apparatus when we recognize actions in field of view.
+
+Our power of storytelling even reaches down into our visual apparatus. The visual apparatus and storytelling apparatus work together to label and recognize actions.
