@@ -33,3 +33,29 @@ Great theory:
 3. produce something you can look up in a library of descriptions
 
 Trouble is no one can make it work, too hard and too coarse to do it.
+
+## Shimon Ullman, Alignment Theory
+
+Shimon Ullman is one of Marr's students received his PhD in 1977, currently a professor at Weizmann Institute in Israel [wiki](https://en.wikipedia.org/wiki/Shimon_Ullman)
+
+The Alignment theory of recognition is based on a very strange and exotic idea.
+
+If you have three pictures of a transparent object (so you see all the vertexes, all visible vertexes), you can reconstruct any view of that object **in orthographic projection**
+
+![various-projections](./various-projections.png)
+
+**Therefore if you close enough to the object and you switch to "perspective projection", it does not work**, but for the most part, you can neglect perspective after you get about 2.5x as far away as how big the object, and you can presume you have orthographic projection projection.
+
+It is important that these pictures/views of the object **not be just rotations on one axis, because they would not form a basis set**
+
+**There is one set of alpha, beta, gamma, and tau that works for everything, for all four points**
+
+The relationship between the points on the unknown object and the points in this stored library of images are related linearly --> that is true because it is orthographic projection
+
+4 equations and 4 unknowns, and we can predict where the corresponding point is going to be in the 4th image; and if it isn't, we are highly suspicious about whether this object is the kind of object we think it is.
+
+![alignment-2d](./alignment-2D.png)
+
+## Demo of Matrix Transformations for Generalized Rotation in 2D
+
+
