@@ -125,3 +125,13 @@ Lecture 9 [class notes](./lec9-constraint-CV-obj-recognition/README.md)
 * Q3: How does Ullman's correlation theory use Goldilock's principle?
 * Q4: Brothers Grimm collected fairy tales, and which fairy tale gives the Rumpelstiltskin principle?
 * Q5: Why do you think we can recognize faces even from the side-view?
+
+---
+
+## Lecture 10 Learning and Nearest Neighbors (Week 16 May232021)
+
+Lecture 10 [class notes](./lec10-learning-nearest-neighbors/README.md)
+
+### Quiz for Lecture 10:
+
+* Q1:...
